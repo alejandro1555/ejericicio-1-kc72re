@@ -22,10 +22,9 @@ function onLoad() {
   console.log("hi");
 
   var arrayUsuario = [];
-  //var arrayUsuario2 = [];
 
   createUsers();
-  //filterUsers(arrayUsuario);
+
   console.log(arrayUsuario);
   console.log(filterUsers(arrayUsuario));
 
@@ -58,7 +57,7 @@ function onLoad() {
     var objeto5 = {
       name: "usuario1",
       country: "spain",
-      money: 199,
+      money: 250,
       premiumAccount: true
     };
     var objeto6 = {
@@ -90,7 +89,6 @@ function onLoad() {
     var resultado = [];
 
     for (let i = 0; i < arrayUsuario.length; i++) {
-      
       if (arrayUsuario[i].country == "spain" && arrayUsuario[i].money > 200) {
         resultado.push(arrayUsuario[i]);
       }
